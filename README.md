@@ -1,2 +1,1 @@
-# PregnancyApp Legal Website
-For GitHub Pages.
+GitHub Pages

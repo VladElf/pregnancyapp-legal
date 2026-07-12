@@ -1,1 +1,1 @@
-body{font-family:Arial,sans-serif;max-width:900px;margin:auto;padding:30px;line-height:1.6;background:#fafafa;color:#333}nav a{margin-right:15px}h1{color:#d86b86}.card{background:white;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.08)}footer{margin-top:40px;font-size:.9em;color:#666}
+body{font-family:Arial;max-width:900px;margin:auto;padding:20px}nav{display:flex;gap:10px}button{margin-left:5px}.card{padding:20px;border:1px solid #ddd}
