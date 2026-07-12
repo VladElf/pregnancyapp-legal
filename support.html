@@ -1,1 +1,139 @@
-<html><head><link rel='stylesheet' href='styles.css'></head><body><nav><a data-i18n='home' href='index.html'>Home</a><a data-i18n='privacy' href='privacy.html'>Privacy</a><a data-i18n='terms' href='terms.html'>Terms</a><a data-i18n='support' href='support.html'>Support</a><span style='margin-left:auto'><button onclick="setLanguage('es')">ES</button><button onclick="setLanguage('en')">EN</button></span></nav><div class='card'><p>Vladimir Vargas<br>vladi.vargas.m@gmail.com</p></div><script src='script.js'></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — PregnancyApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+  <a href="support.html" class="active">Support</a>
+</nav>
+
+<div class="card">
+
+  <h1>Support</h1>
+  <p>We're here to help you get the most out of PregnancyApp</p>
+
+  <!-- Contact Info -->
+  <h2>Contact Us</h2>
+  <p>Have a question, suggestion, or need assistance? Reach out to us:</p>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:vladi.vargas.m@gmail.com">vladi.vargas.m@gmail.com</a></li>
+    <li><strong>Application:</strong> PregnancyApp</li>
+    <li><strong>Developer:</strong> Vladimir Vargas</li>
+    <li><strong>Languages:</strong> English, Español</li>
+  </ul>
+
+  <div class="highlight info">
+    <strong>Response time:</strong> We aim to respond within <strong>24–48 hours</strong> on business days (Monday–Friday). Weekend inquiries will be addressed on the following Monday.
+  </div>
+
+  <!-- Support Categories -->
+  <h2>What We Can Help With</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Bug Reports</strong></td>
+        <td>Report crashes, errors, or unexpected behavior in the app</td>
+      </tr>
+      <tr>
+        <td><strong>Feature Requests</strong></td>
+        <td>Suggest new features or improvements you'd like to see</td>
+      </tr>
+      <tr>
+        <td><strong>Privacy Concerns</strong></td>
+        <td>Questions about your data, privacy policy, or data deletion</td>
+      </tr>
+      <tr>
+        <td><strong>General Questions</strong></td>
+        <td>Any other questions about using PregnancyApp</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- FAQ -->
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">How do I delete my pregnancy data?</button>
+    <div class="faq-answer">
+      <p>You can delete all your local data from the app's <strong>Settings</strong> screen. Simply navigate to Settings → Delete All Data. Alternatively, uninstalling the app will remove all stored data from your device.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Is my personal data sent to any server?</button>
+    <div class="faq-answer">
+      <p>No. All your pregnancy data (weight, kick counts, reminders, etc.) is stored <strong>locally on your device</strong> using SQLite and is never transmitted to any server. Only anonymous usage statistics are collected via Firebase Analytics.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">How do I disable ads?</button>
+    <div class="faq-answer">
+      <p>The free version of PregnancyApp includes ads to support development. If a premium version becomes available in the future, ad removal will be included. In the meantime, you can opt out of personalized advertising through your device settings (Settings → Google → Ads on Android, or Settings → Privacy → Tracking on iOS).</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Which languages are supported?</button>
+    <div class="faq-answer">
+      <p>PregnancyApp currently supports <strong>English</strong> and <strong>Spanish (Español)</strong>. You can switch languages from the app's Settings screen. If you'd like to help translate the app into another language, please contact us!</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Can I use the app without an internet connection?</button>
+    <div class="faq-answer">
+      <p>Yes! The core features of PregnancyApp (week tracking, kick counter, weight tracker, reminders) work <strong>offline</strong>. An internet connection is only required for loading ads and anonymous analytics.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Is PregnancyApp a substitute for medical advice?</button>
+    <div class="faq-answer">
+      <p><strong>No.</strong> PregnancyApp is an informational tool and is not a medical device. Always consult your healthcare provider for medical decisions. The app is designed to complement, not replace, professional prenatal care.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">How do I report a bug or crash?</button>
+    <div class="faq-answer">
+      <p>Please send an email to <a href="mailto:vladi.vargas.m@gmail.com">vladi.vargas.m@gmail.com</a> with:</p>
+      <ul>
+        <li>A description of the issue</li>
+        <li>Your device model and operating system version</li>
+        <li>Steps to reproduce the problem (if applicable)</li>
+      </ul>
+      <p>This helps us resolve the issue faster.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 PregnancyApp — Vladimir Vargas
+</footer>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    this.parentElement.classList.toggle('open');
+  });
+});
+</script>
+
+</body>
+</html>

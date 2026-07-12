@@ -1,1 +1,259 @@
-body{font-family:Arial;max-width:900px;margin:auto;padding:20px}nav{display:flex;gap:10px}button{margin-left:5px}.card{padding:20px;border:1px solid #ddd}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.7;
+  background: #f5f5f7;
+  color: #2c2c2c;
+}
+
+/* ── Navigation ── */
+nav {
+  background: #d86b86;
+  padding: 16px 30px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(216, 107, 134, 0.3);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+nav a.active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ── Main card ── */
+.card {
+  background: #fff;
+  padding: 40px 48px;
+  margin: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* ── Typography ── */
+h1 {
+  color: #d86b86;
+  font-size: 2rem;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.card > p:first-of-type {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.25rem;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #fce4ec;
+}
+
+h3 {
+  color: #555;
+  font-size: 1.05rem;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 14px;
+}
+
+ul, ol {
+  margin: 10px 0 18px 24px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+strong {
+  color: #c2185b;
+}
+
+a {
+  color: #d86b86;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+a:hover {
+  border-bottom-color: #d86b86;
+}
+
+/* ── Tables ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  font-size: 0.92rem;
+}
+
+thead th {
+  background: #fce4ec;
+  color: #c2185b;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+tbody tr:hover {
+  background: #fdf2f5;
+}
+
+/* ── FAQ ── */
+.faq-item {
+  margin-bottom: 16px;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: #fdf2f5;
+  border: none;
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.faq-question:hover {
+  background: #fce4ec;
+}
+
+.faq-question::after {
+  content: '+';
+  font-size: 1.4rem;
+  color: #d86b86;
+  font-weight: 300;
+  transition: transform 0.2s;
+}
+
+.faq-item.open .faq-question::after {
+  content: '−';
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 20px;
+  background: #fff;
+  color: #555;
+  line-height: 1.7;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 300px;
+  padding: 16px 20px;
+}
+
+/* ── Highlight box ── */
+.highlight {
+  background: #fff3e0;
+  border-left: 4px solid #ff9800;
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  margin: 16px 0;
+  font-size: 0.93rem;
+}
+
+.highlight.info {
+  background: #e3f2fd;
+  border-left-color: #2196f3;
+}
+
+.highlight.danger {
+  background: #fce4ec;
+  border-left-color: #e91e63;
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.85rem;
+  color: #999;
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px 16px;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .card {
+    margin: 16px;
+    padding: 24px 20px;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  table {
+    font-size: 0.82rem;
+  }
+
+  thead th, tbody td {
+    padding: 8px 10px;
+  }
+}
